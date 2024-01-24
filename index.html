@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ashish Tambe Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://www.flaticon.com/free-icon-font/angle-down_3916923">
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+</head>
+
+<script>
+	// Add this script to handle the counting animation
+	document.addEventListener('DOMContentLoaded', function () {
+		var numbers = document.querySelectorAll('.number');
+		numbers.forEach(function (number) {
+			var finalNumber = parseInt(number.getAttribute('data-number'));
+			var duration = 2000; // Adjust the duration as needed
+			var interval = 10;
+			var step = (finalNumber * interval) / duration;
+
+			var currentNumber = 0;
+			var timer = setInterval(function () {
+				currentNumber += step;
+				number.textContent = Math.round(currentNumber);
+				if (currentNumber >= finalNumber) {
+					clearInterval(timer);
+					number.textContent = finalNumber;
+				}
+			}, interval);
+		});
+	});
+</script>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Ashish Tambe</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item"><a href="pdf/Soc Manger (Ashish Tambe).pdf" target="_blank"
+							class="nav-link"><span>CV <i class="fi fi-rr-download"></i> </span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<!-- <div class="one-third js-fullheight order-md-last img" style="background-image: url(images/bg1.png);
+									background-position: top center; /* Adjusted background position to show the top part */
+									background-size: cover; /* Maintain cover aspect ratio */
+									height: calc(100% - 20px); /* Adjusted height to hide 20 pixels from the bottom */
+									margin-bottom: 20px; /* Added margin to compensate for the reduced height */
+									">
+							<div class="overlay"></div>
+						</div> -->
+
+
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Ashish Tambe</span></h1>
+								<br>
+								<h2>Sr. Society Manager</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="#"
+										target="_blank" class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="#experience-section" class="btn btn-white btn-outline-white py-3 px-4">My
+										works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/18.png" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+										</br>
+											<p><span class="title-s">Name: </span> <span>Ashish Tambe</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Society Manager</span>
+											</p>
+											<p><span class="title-s">Experience: </span> <span>7 Years 3 Months</span>
+											</p>
+											<p><span class="title-s">Address: </span> <span>Mumbai, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+								</br>
+									<p class="title-s">Skills</p>
+									<span>Communication Skills : </span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Financial Management : </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Organizational Skills : </span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Vendor Management : </span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Legal Knowledge : </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<span>Community Engagement : </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>Hello! I'm Ashish Tambe, a seasoned Senior Society Manager based in Mumbai.
+									Proficient in communication and self-management, I specialize in efficient society
+									operations and meticulous financial management. With expertise in tools like Excel
+									and Power BI, I bring a positive attitude and dedication to every role. Currently
+									managing societies such as Veena Signature CHS Ltd. and Aurigae Residency CHS Ltd.,
+									I ensure smooth administrative processes and statutory compliance. Let's connect and
+									explore how my skills can contribute to your community's success!</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Society Manager, Administrative
+											Manager, Legal Compliance Manager
+											Facility Manager &amp; Account Manager </span>
+									</li>
+									<li class="d-flex"><span>Domain:</span> <span>Data , Vendor , BFSI , Financial &amp;
+											Security and Safety
+											Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Management Studies (B.M.S.)</span>
+									</li>
+									<li class="d-flex"><span>Language:</span> <span>Marathi, Hindi, English</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+									<!-- <li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li> -->
+									<li class="d-flex"><span>Interest:</span> <span>Drawing, Painting, Traveling,
+											Teaching</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="11">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-no-pb" id="experience-section">
+		<div class="container">
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<p>Results-driven Society Manager with a proven track record in efficient property management, financial
+					oversight, and fostering vibrant community engagement. Skilled in navigating legal compliance,
+					ensuring seamless operations, and enhancing resident satisfaction. Ready to bring a blend of
+					leadership, organizational, and communication skills to drive excellence in residential community
+					management.</p>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Sr. Society Manager / Accountant</h2>
+						<span class="position">
+							Coronnet CHS Ltd. (Part Time) &
+							Veena Signature CHS Ltd. (Part Time) &
+							Aurigae Residency CHS Ltd. (Part Time) &
+							Veena Saaz CHS Ltd. (Part Time) &</br>
+							Akurli Pushkar CHS Ltd. (Part Time)</span>
+						<p class="mt-4">Transforming Residential Living: Elevating Community Experiences as Society Manager.
+						<ul>
+							<li>Comprehensive Financial Management: Executed precise handling of bank and cash transactions, ensuring financial
+								accuracy and transparency.
+								Maintained up-to-date statutory books, and efficiently updated records of sundry debtors and creditors for
+								meticulous financial control.
+							</li>
+							<li>Financial Stewardship: Demonstrating expertise in budgeting, financial planning, and transparent financial
+								transactions to enhance the fiscal
+								health of managed societies.</li>
+							<li>Community-Centric Approach: Fostering a sense of community through engaging events, open communication channels, and
+								dedicated efforts to address
+								resident needs, creating a harmonious living environment.
+							</li>
+
+						</ul>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Assistant Manager.</h2>
+						<span class="position">Riviera Tower CHS Ltd. & </br>
+							Spring Grove Tower CHS Ltd.</span>
+						<p class="mt-4">Empowering Towering Communities: Exemplary Management as Assistant Manager.
+						<ul>
+							<li>Efficient Property Management: Spearheading day-to-day operations and maintenance of prestigious housing societies,
+								ensuring optimal living conditions for residents.
+							</li>
+							<li>Holistic Operations Oversight: Successfully managed security, housekeeping staff, vendor relationships, and Annual
+								Maintenance Contract (AMC) vendors,ensuring a secure and well-maintained living environment.
+								Addressed resident concerns by proactively tracking and resolving complaints, fostering a sense of security and
+								satisfaction.
+							</li>
+							<li>Strategic Legal and Administrative Contributions: Skillfully handled documentation and correspondence with BMC,
+								legal, and Dy. Registrar office, including the drafting of Marathi letters.
+								Led works related to accounts, administration, and legal matters, showcasing a comprehensive skill set.
+								Conducted Annual General Meetings (AGM), Special General Meetings (SGM), and Management Committee (M.C.) meets,
+								ensuring efficient proceedings and preparing detailed minutes for documentation.
+							</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2018</span>
+						<h2>Clerk</h2>
+						<span class="position">Mumbai District Co-op Bank</span>
+						<p class="mt-4">Fostering Financial Transactions: Contributing Excellence as a Bank Clerk.
+						<ul>
+							<li>Customer-Centric Financial Handling: Proficiently managed customer financial transactions, adeptly processing
+								deposits, withdrawals, and responding to inquiries, ensuring a seamless banking experience.</li>
+							<li>Administrative Support: Assisted the administrative department with tasks related to Fixed Deposits (FD) and
+								loan documentation, contributing to the efficient functioning of banking operations.</li>
+							<li>Compliance and Record Management: Ensured compliance with Know Your Customer (KYC) regulations, managing files,
+								and data to uphold the highest standards of regulatory requirements.
+								Diligently prepared and recorded all deposits and payments, maintaining meticulous financial records.</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="education-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2014-2015</span>
+						<h2>Management Studies (B.M.S.),</h2>
+						<span class="position">Mumbai University</span>
+						<p class="mt-4">Grade: First class distinction, 70.50%</p>
+					</div>
+				</div>
+				<br>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2011-2012</span>
+						<h2>H.S.C</h2>
+						<span class="position">Patkar Varde Collage Of Science And Commerce</span>
+						<p class="mt-4">Grade: First class distinction, 77.83%</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="pdf/Soc Manger (Ashish Tambe).pdf" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="6">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="9">9</strong>
+							<span>Societies</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="250">0</strong>
+							<span>Mentored Students</span>
+						</div>
+					</div>
+				</div> -->
+
+
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Kandivali, Mumbai, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://0101010101">8286780548</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashart8549@gmail.com" target="_blank">ashart8549@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="pdf/Soc Manger (Ashish Tambe).pdf" target="_blank">My Resume</a></p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Direct <span> Message? </span></h2>
+							<a class="text-primary text-decoration-none"
+								href="https://wa.me/8286780548"
+								target="_blank" aria-label="Email">
+								Click Here
+							</a>
+						</div>
+					</div>
+					
+					<br>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved by <a
+							href="https://colorlib.com" target="_blank">Ashish</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
